@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Ri - Personal Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <style>.tags span {
+  display: inline-block;
+  background-color: #e94560;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+    body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  font-family: 'Poppins', sans-serif;
+  background: url('banner.jpg') no-repeat center center/cover;
+  color: white;
+  height: 200px;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(26, 26, 46, 0.7);
+  z-index: 0;
+}
+
+header h1,
+header p {
+  position: relative;
+  z-index: 1;
+}
+
+    nav {
+      background: #8d99ae;
+      padding: 0.8rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .featured {
+      padding: 2rem;
+      background: #edf2f4;
+      text-align: center;
+    }
+
+    .featured h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .featured p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .posts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .post {
+      background: #fff;
+      border: 1px solid #ccc;
+      margin: 1rem;
+      padding: 1rem;
+      max-width: 300px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .post h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      background: #2b2d42;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      
+      @media (max-width: 600px) {
+  header {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .posts {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .post {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+}
+      form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #e94560;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d7334a;
+}
+  </style>
+</head>
+<body>
+  <header id="home">
+    <h1>A Ri</h1>
+    <p>Stories, thoughts, and everything in between.</p>
+  </header>
+
+  <nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#blog">Blog</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+  <section id="about" class="featured">
+    <h2>Featured Post</h2>
+    <img src="featured.jpg" alt="Featured Blog Banner" style="max-width: 100%; border-radius: 10px; margin: 1rem 0;" />
+    <p>Welcome to my blog! Here’s where I share my reflections, experiences, and ideas with the world.</p>
+  </section>
+
+  <section id="blog" class="posts">
+  <div class="post">
+    <h3>How I Started Blogging</h3>
+    <img src="blog.jpg" alt="blog" style="max-width: 100%; border-radius: 10px;" />
+    <p>
+      It all began with a simple idea: share my thoughts and experiences with the world. I wasn’t sure where to start, but I knew I wanted a space that felt personal and honest.
+    </p>
+    <p>
+      I built this blog from scratch using HTML and CSS. No fancy tools — just a desire to write and create. If you're thinking of starting your own blog, my advice is: don't wait. Start messy, and refine as you go.
+    </p>
+    <div class="tags">
+      <span>#personal</span>
+      <span>#blogging</span>
+      <span>#beginner</span>
+    </div>
+  </div>
+
+  <div class="post">
+    <h3>My Favorite Tools for Writing</h3>
+    <img src="computer.jpg" alt="computer" style="max-width: 100%; border-radius: 10px;" />
+    <p>
+      From simple text editors to powerful note-taking apps, here are the tools I use daily to keep my writing process smooth and organized. Spoiler: I love Notion and Google Docs.
+    </p>
+    <div class="tags">
+      <span>#tools</span>
+      <span>#writing</span>
+      <span>#productivity</span>
+    </div>
+  </div>
+    <div class="post">
+  <h3>The Time I Accidentally Joined a Goat Parade</h3>
+      <img src="goat-parade.jpg" alt="Goat Parade" style="max-width: 100%; border-radius: 10px;" />
+  <p>
+    It started like any other Sunday. I went out for a walk with headphones in, lost in my own world — until I noticed a group of goats trotting down the street. Naturally, I followed them. Who wouldn’t?
+  </p>
+  <p>
+    Five minutes later, I found myself in the middle of a local farmer’s **annual goat parade**, surrounded by kids (both goats and humans), a guy in a chicken suit, and someone playing the accordion. A tourist took a photo of me and asked how long I’d been a “goat guide.”
+  </p>
+  <p>
+    I didn’t have the heart to tell him I was just trying to get to the grocery store.
+  </p>
+  <div class="tags">
+    <span>#funny</span>
+    <span>#trueStory</span>
+    <span>#goats</span>
+  </div>
+    </div>
+</section>
+
+  <section id="contact" class="featured">
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required /><br />
+    <input type="email" name="email" placeholder="Your Email" required /><br />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br />
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+  <footer>
+    <p>© 2025 A Ri. All rights reserved.</p>
+  </footer>
+  <script>
+  const posts = document.querySelectorAll('.post');
+
+  const reveal = () => {
+    posts.forEach(post => {
+      const rect = post.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        post.style.opacity = 1;
+      }
+    });
+  };
+
+  window.addEventListener('scroll', reveal);
+  window.addEventListener('load', reveal);
+  </script>
+</body>
+</html>
